@@ -9,6 +9,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 find_package(Boost REQUIRED COMPONENTS system)
 include_directories(${Boost_INCLUDE_DIRS})
 
+# Add cppcodec as a submodule
+add_subdirectory(external/cppcodec)
+
 # Find nlohmann_json
 find_package(nlohmann_json REQUIRED)
 
